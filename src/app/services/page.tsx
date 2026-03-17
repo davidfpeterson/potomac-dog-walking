@@ -5,9 +5,9 @@ import ContactSection from "@/components/ContactSection";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Dog Walking Services in Potomac MD | Plans & Pricing",
+  title: "Dog Walking Plans & Pricing | Potomac MD",
   description:
-    "Explore dog walking plans from Potomac Dog Walking — Relief Walks, Signature Walks, Fitness Walks, and Adventure Walks. Flexible scheduling, solo walks, GPS tracking, and detailed reports after every visit.",
+    "Dog walking plans in Potomac, MD. Relief, Signature, Fitness, and Adventure walks. Solo walks with GPS tracking. No contracts.",
 };
 
 const plans = [

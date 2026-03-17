@@ -5,11 +5,11 @@ import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: {
-    default: "Dog Walking in Potomac MD | Professional Dog Walkers | Potomac Dog Walking",
+    default: "Dog Walking in Potomac MD | Potomac Dog Walking",
     template: "%s | Potomac Dog Walking",
   },
   description:
-    "Professional dog walking and canine enrichment services in Potomac, MD. Locally owned, insured, and trusted by Potomac's most discerning dog owners since 2009. Schedule a free meet & greet today.",
+    "Professional dog walking and canine enrichment in Potomac, MD. Insured, bonded, GPS-tracked solo walks. Trusted since 2009. Schedule a free meet & greet.",
   openGraph: {
     title: "Professional Dog Walking in Potomac, MD | Potomac Dog Walking",
     description:

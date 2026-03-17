@@ -4,9 +4,9 @@ import FAQSection from "@/components/FAQSection";
 import ContactSection from "@/components/ContactSection";
 
 export const metadata: Metadata = {
-  title: "Dog Walking Service Area | Potomac MD Neighborhoods",
+  title: "Service Area | Dog Walking in Potomac MD",
   description:
-    "Potomac Dog Walking serves homeowners throughout Potomac, MD, including Avenel, River Falls, Potomac Falls, Cabin John, Carderock Springs, Park Potomac, and surrounding neighborhoods.",
+    "Dog walking service area in Potomac, MD. Serving Avenel, River Falls, Cabin John, Park Potomac, Bradley Farms, and surrounding neighborhoods.",
 };
 
 const neighborhoods = [

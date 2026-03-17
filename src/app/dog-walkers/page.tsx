@@ -6,7 +6,7 @@ import ContactSection from "@/components/ContactSection";
 export const metadata: Metadata = {
   title: "Meet Our Dog Walkers | Potomac MD",
   description:
-    "Meet the professional dog walkers at Potomac Dog Walking. Background-checked, Pet First Aid-certified, and trained in dog health, behavior, and safety. Serving Potomac, MD.",
+    "Professional dog walkers in Potomac, MD. Background-checked, Pet First Aid-certified, trained in canine behavior. Meet our team today.",
 };
 
 const faqs = [

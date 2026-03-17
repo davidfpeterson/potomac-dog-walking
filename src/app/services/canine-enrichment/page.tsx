@@ -4,9 +4,9 @@ import FAQSection from "@/components/FAQSection";
 import ContactSection from "@/components/ContactSection";
 
 export const metadata: Metadata = {
-  title: "Canine Enrichment Services in Potomac MD | Mental Stimulation for Dogs",
+  title: "Canine Enrichment in Potomac MD | Scent Work",
   description:
-    "Canine enrichment services in Potomac, MD. Scent work, exploration, and mental stimulation activities tailored to your dog's breed and temperament. Keep your dog engaged, calm, and happy.",
+    "Canine enrichment in Potomac, MD. Scent work, exploration, and mental stimulation tailored to your dog. Call (301) 265-3647.",
 };
 
 const faqs = [
@@ -136,6 +136,30 @@ export default function CanineEnrichmentPage() {
             scent work, exploration of new areas, and activities that engage your dog&apos;s
             problem-solving instincts. Enrichment pairs naturally with our Signature, Fitness,
             and Adventure Walk plans.
+          </p>
+        </div>
+      </section>
+
+      {/* What Affects Cost */}
+      <section className="py-16 sm:py-20">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
+            What Affects the Cost of Canine Enrichment in Potomac
+          </h2>
+          <p className="text-gray-600 leading-relaxed mb-4">
+            Enrichment is included as part of your dog&apos;s walking plan, so the cost depends on the
+            walk duration and frequency you choose. Longer walks like Fitness and Adventure plans
+            naturally allow more time for structured enrichment activities such as extended scent work,
+            trail exploration, and decompression walks in varied environments.
+          </p>
+          <p className="text-gray-600 leading-relaxed">
+            Recurring clients benefit from three complimentary walks applied as a welcome credit on
+            their first invoice, priority scheduling, and progress reports that track enrichment
+            outcomes over time. There are no contracts, and you can adjust your plan as your dog&apos;s
+            needs change. To learn more about walk durations and plan options, visit our{" "}
+            <a href="/services" className="text-green-800 underline font-medium">
+              services and pricing page
+            </a>.
           </p>
         </div>
       </section>

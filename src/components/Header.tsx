@@ -77,7 +77,7 @@ export default function Header() {
               Our Team
             </Link>
             <Link
-              href="#contact"
+              href="/#contact"
               className="bg-green-800 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-green-700 transition-colors"
             >
               Schedule Meet &amp; Greet
@@ -131,7 +131,7 @@ export default function Header() {
               Our Team
             </Link>
             <Link
-              href="#contact"
+              href="/#contact"
               className="block mt-3 bg-green-800 text-white text-center px-4 py-2.5 rounded-lg font-semibold"
               onClick={() => setMobileOpen(false)}
             >

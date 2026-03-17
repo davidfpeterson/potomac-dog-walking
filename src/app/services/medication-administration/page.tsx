@@ -4,9 +4,9 @@ import FAQSection from "@/components/FAQSection";
 import ContactSection from "@/components/ContactSection";
 
 export const metadata: Metadata = {
-  title: "Dog Medication Administration in Potomac MD | Pet Med Visits",
+  title: "Dog Medication Administration | Potomac MD",
   description:
-    "Reliable medication administration for dogs in Potomac, MD. Our trained, Pet First Aid-certified walkers administer prescribed medications during scheduled visits. Never miss a dose.",
+    "Dog medication administration in Potomac, MD. Trained walkers give prescribed meds on schedule during visits. Never miss a dose. Call (301) 265-3647.",
 };
 
 const faqs = [
@@ -105,6 +105,51 @@ export default function MedicationAdministrationPage() {
             breakthrough episodes. Skipping or delaying a dose can set back recovery, reduce the
             effectiveness of treatment, or cause unnecessary discomfort. Professional medication
             administration removes the guesswork and ensures your dog&apos;s treatment plan stays on track.
+          </p>
+        </div>
+      </section>
+
+      {/* How It Fits Into Your Plan */}
+      <section className="py-16 sm:py-20 bg-amber-50">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
+            How Medication Visits Fit Into Your Dog&apos;s Walking Plan
+          </h2>
+          <p className="text-gray-600 leading-relaxed mb-4">
+            Most Potomac clients pair medication administration with a scheduled walk. Your walker
+            arrives during the agreed-upon time window, administers the medication, and then takes
+            your dog out for their regular walk. This approach keeps your dog on a consistent
+            routine and eliminates the need for a separate visit solely for medication.
+          </p>
+          <p className="text-gray-600 leading-relaxed">
+            If your dog needs medication at a time that does not align with their walk schedule, we
+            can arrange a dedicated medication-only visit. These shorter visits are booked in the
+            same 15-minute increments with a two-hour arrival window, giving you flexibility while
+            maintaining the precision your dog&apos;s treatment plan requires.
+          </p>
+        </div>
+      </section>
+
+      {/* What Affects Cost */}
+      <section className="py-16 sm:py-20">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
+            What Affects the Cost of Medication Administration in Potomac
+          </h2>
+          <p className="text-gray-600 leading-relaxed mb-4">
+            The cost of medication administration depends on whether it is combined with a walk or
+            booked as a standalone visit. When added to a walking plan, medication administration is
+            incorporated into the visit at no additional charge for standard oral and topical
+            medications. Standalone medication visits are priced based on visit duration.
+          </p>
+          <p className="text-gray-600 leading-relaxed">
+            Recurring clients receive three complimentary walks as a welcome credit, priority
+            scheduling with guaranteed time slots, and detailed progress reports across visits.
+            There are no long-term contracts. To see our full range of walking plans and service
+            options, visit our{" "}
+            <a href="/services" className="text-green-800 underline font-medium">
+              services and pricing page
+            </a>.
           </p>
         </div>
       </section>

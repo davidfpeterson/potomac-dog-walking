@@ -4,9 +4,9 @@ import FAQSection from "@/components/FAQSection";
 import ContactSection from "@/components/ContactSection";
 
 export const metadata: Metadata = {
-  title: "Dog Walking Services in Potomac MD | Daily Solo Walks",
+  title: "Dog Walking in Potomac MD | Solo Walks",
   description:
-    "Professional daily dog walking in Potomac, MD. Solo walks from 15 to 60 minutes, GPS-tracked routes, post-visit reports, and walkers certified in Pet First Aid. Schedule a free meet & greet.",
+    "Solo dog walks from 15 to 60 minutes in Potomac, MD. GPS-tracked, certified walkers, post-visit reports. Call (301) 265-3647.",
 };
 
 const walkOptions = [
@@ -161,6 +161,22 @@ export default function DogWalkingPage() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* What Affects Cost */}
+      <section className="py-16 sm:py-20 bg-green-50">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
+            What Affects Dog Walking Costs in Potomac
+          </h2>
+          <p className="text-gray-600 leading-relaxed mb-4">
+            The cost of professional dog walking in Potomac depends primarily on walk duration. A fifteen-minute relief walk is the most affordable option, while a sixty-minute adventure walk costs more due to the extended time and distance involved. Clients who book recurring daily or weekly walks receive better per-walk rates than one-time or occasional bookings.
+          </p>
+          <p className="text-gray-600 leading-relaxed">
+            Additional factors that may influence pricing include medication administration during the visit, special handling requirements for reactive or anxious dogs, and walks scheduled during early morning or evening hours. We publish transparent pricing on our{" "}
+            <a href="/services" className="text-green-800 underline hover:text-green-600">services page</a> with no hidden fees, no surge pricing, and no long-term contracts.
+          </p>
         </div>
       </section>
 

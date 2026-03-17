@@ -4,16 +4,16 @@ import FAQSection from "@/components/FAQSection";
 import ContactSection from "@/components/ContactSection";
 
 export const metadata: Metadata = {
-  title: "About Potomac Dog Walking | Locally Owned Dog Walkers in Potomac MD",
+  title: "About Potomac Dog Walking | Potomac MD",
   description:
-    "Potomac Dog Walking is a locally owned, insured, and vet-recommended pet care company serving Potomac, MD since 2009. Meet our owner Dave Peterson and learn about our team.",
+    "Locally owned dog walking company in Potomac, MD. Insured, bonded, vet-recommended since 2009. Led by Dave Peterson. Schedule a free meet and greet.",
 };
 
 const faqs = [
   {
-    question: "Is Potomac Dog Walking the same company as Bethesda Dog Walkers?",
+    question: "What makes Potomac Dog Walking different from other dog walkers?",
     answer:
-      "Potomac Dog Walking is a separate operation focused on serving Potomac, Maryland. It is led by the same owner, Dave Peterson, and built on the same standards, training protocols, and values that made Bethesda Dog Walkers a seven-time \"Best of Bethesda\" winner. Potomac clients receive the same level of professional care.",
+      "Potomac Dog Walking is a locally owned, full-time pet care company — not a side gig or gig-worker app. Every walk is a solo walk with a dedicated, background-checked walker. We are insured, bonded, certified in Pet First Aid and CPR, and members of Pet Sitters International. We have served the Potomac community since 2009 and complete over twenty thousand visits per year.",
   },
   {
     question: "How long has Dave Peterson been in the pet care industry?",
@@ -37,7 +37,7 @@ export default function AboutPage() {
     <>
       <Hero
         title="About Potomac Dog Walking"
-        subtitle="Locally owned and operated, built on the same values and standards that earned our sister company seven Best of Bethesda awards. Insured, bonded, and vet-recommended."
+        subtitle="Locally owned and operated since 2009. Over twenty thousand visits per year across Potomac's neighborhoods. Insured, bonded, and vet-recommended."
         showCTA={false}
       />
 
@@ -47,7 +47,7 @@ export default function AboutPage() {
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">Our Story</h2>
           <p className="text-gray-600 leading-relaxed mb-4">
             Potomac Dog Walking is led by Dave Peterson, who has been part of the professional pet
-            care industry since 2004. Dave grew up in Bethesda and graduated from Walt Whitman High
+            care industry since 2004. Dave grew up in Montgomery County and graduated from Walt Whitman High
             School in 2003. He began working in professional dog walking the following summer and
             spent years learning the business from the ground up.
           </p>
@@ -55,9 +55,8 @@ export default function AboutPage() {
             When the opportunity came to lead the operation, Dave stepped in and built on the
             foundation established by the company&apos;s original founders, Jackie Fahr and Nancy
             Grunley, who started the business in 2009. Under Dave&apos;s leadership, the team
-            manages thousands of visits per year and has expanded to serve the Potomac community
-            with the same standard of care that earned seven &quot;Best of Bethesda&quot;
-            recognitions between 2009 and 2023.
+            manages over twenty thousand visits per year and has become one of the most trusted
+            pet care providers in the Potomac area.
           </p>
         </div>
       </section>

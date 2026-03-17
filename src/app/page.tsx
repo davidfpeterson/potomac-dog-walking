@@ -84,8 +84,8 @@ export default function HomePage() {
               Visits Per Year
             </div>
             <div>
-              <span className="block text-2xl font-bold text-green-800">7x Winner</span>
-              Best of Bethesda
+              <span className="block text-2xl font-bold text-green-800">PSI Member</span>
+              Pet Sitters International
             </div>
             <div>
               <span className="block text-2xl font-bold text-green-800">100%</span>
@@ -95,21 +95,21 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Intro */}
+      {/* Intro — First Paragraph Rule: service, location, who, outcome */}
       <section className="py-16 sm:py-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
             Dog Walking and Enrichment Services in Potomac
           </h2>
           <p className="text-gray-600 leading-relaxed mb-6">
-            We offer a full range of professional dog walking services designed around your dog&apos;s
-            individual needs. Every walk is a solo walk — your dog receives one-on-one attention from
-            a dedicated walker. Whether your dog needs a quick relief walk or an extended adventure
-            along the C&amp;O Canal towpath, our team provides consistent, high-quality care.
+            Potomac Dog Walking provides professional dog walking, canine enrichment, medication administration, and backyard clean-up services for homeowners throughout Potomac, Maryland. Every walk is a solo walk, meaning your dog receives one-on-one attention from a dedicated, background-checked walker rather than sharing time with dogs from other households. Whether your dog needs a quick fifteen-minute relief walk or an extended sixty-minute adventure along the C&amp;O Canal towpath, our team delivers consistent, high-quality care that keeps your dog healthy, stimulated, and happy.
+          </p>
+          <p className="text-gray-600 leading-relaxed mb-6">
+            All visits include GPS tracking, timestamped arrival and departure, written summaries, photos, and video updates delivered through our scheduling platform. You always know exactly where your dog went, how long the walk lasted, and how your dog behaved during the visit. Our walkers are certified in Pet First Aid and CPR, fully insured, bonded, and members of{" "}
+            <a href="https://www.petsit.com/" target="_blank" rel="noopener noreferrer" className="text-green-800 underline hover:text-green-600">Pet Sitters International</a>.
           </p>
           <p className="text-gray-600 leading-relaxed">
-            All visits include GPS tracking, timestamped arrival and departure, written summaries,
-            photos, and video updates through our scheduling platform.
+            Potomac Dog Walking has served the Potomac community since 2009, completing over twenty thousand visits per year across neighborhoods including Avenel, River Falls, Cabin John, Park Potomac, Bradley Farms, and Seven Locks. We are one of the most trusted and longest-running pet care providers in Montgomery County.
           </p>
         </div>
       </section>
@@ -136,6 +136,39 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Why Your Dog Needs a Professional Walker — standalone section */}
+      <section className="py-16 sm:py-20">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
+            Why Your Dog Needs a Professional Walker in Potomac
+          </h2>
+          <p className="text-gray-600 leading-relaxed mb-4">
+            Dogs who spend the workday home alone often develop behavioral issues caused by insufficient exercise and mental stimulation. Restlessness, excessive barking, destructive chewing, weight gain, and separation anxiety are common signs that a dog needs a structured midday walk. A fenced yard provides space to relieve themselves, but it does not deliver the changing scenery, new scents, and sustained movement that a walk through Potomac&apos;s neighborhoods and trails provides.
+          </p>
+          <p className="text-gray-600 leading-relaxed">
+            Professional dog walking addresses these problems at their root. A consistent daily walk burns excess energy, provides socialization opportunities, strengthens the bond between your dog and their walker, and gives your dog something to look forward to each day. Potomac&apos;s location near the{" "}
+            <a href="https://www.nps.gov/choh/index.htm" target="_blank" rel="noopener noreferrer" className="text-green-800 underline hover:text-green-600">C&amp;O Canal towpath</a> and{" "}
+            <a href="https://www.montgomeryparks.org/parks-and-trails/cabin-john-regional-park/" target="_blank" rel="noopener noreferrer" className="text-green-800 underline hover:text-green-600">Cabin John Regional Park</a> means your dog has access to varied terrain and environments that keep walks interesting throughout the year.
+          </p>
+        </div>
+      </section>
+
+      {/* What Affects the Cost — required by course framework */}
+      <section className="py-16 sm:py-20 bg-green-50">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
+            What Affects the Cost of Dog Walking in Potomac
+          </h2>
+          <p className="text-gray-600 leading-relaxed mb-4">
+            Dog walking rates in Potomac depend on several factors. Walk duration is the primary driver — a fifteen-minute relief walk costs less than a sixty-minute adventure walk. The number of visits per week also affects pricing, with recurring clients receiving better per-walk rates than occasional bookings. If your dog requires medication administration, special handling for behavioral issues, or walks during early morning or evening hours, those factors may also influence the overall cost.
+          </p>
+          <p className="text-gray-600 leading-relaxed">
+            At Potomac Dog Walking, we publish transparent pricing on our{" "}
+            <Link href="/services" className="text-green-800 underline hover:text-green-600">services page</Link> so you always know what to expect. There are no hidden fees, no surge pricing, and no long-term contracts. You can adjust your walking plan at any time based on your schedule and your dog&apos;s needs.
+          </p>
+        </div>
+      </section>
+
       {/* Why Choose Us */}
       <section className="py-16 sm:py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -149,8 +182,8 @@ export default function HomePage() {
               </div>
               <h3 className="font-bold text-gray-900 mb-2">Certified &amp; Insured</h3>
               <p className="text-gray-600 text-sm">
-                Background-checked, Pet First Aid &amp; CPR certified, insured, bonded,
-                and members of Pet Sitters International.
+                Every walker is background-checked, Pet First Aid and CPR certified, insured, bonded,
+                and a member of Pet Sitters International. We carry commercial liability insurance so your home and your dog are always protected.
               </p>
             </div>
             <div className="text-center">
@@ -160,7 +193,7 @@ export default function HomePage() {
               <h3 className="font-bold text-gray-900 mb-2">GPS-Tracked Walks</h3>
               <p className="text-gray-600 text-sm">
                 Real-time GPS tracking, timestamped visits, photos, videos, and
-                written summaries after every walk via Time to Pet.
+                written summaries after every walk delivered through our scheduling platform. You always know where your dog went and how they did.
               </p>
             </div>
             <div className="text-center">
@@ -169,8 +202,8 @@ export default function HomePage() {
               </div>
               <h3 className="font-bold text-gray-900 mb-2">Consistent &amp; Reliable</h3>
               <p className="text-gray-600 text-sm">
-                Dedicated primary walker, trained backups, guaranteed time slots, and a
-                money-back guarantee during your first four weeks.
+                Dedicated primary walker, trained backups who already know your dog, guaranteed time slots, and a
+                money-back guarantee during your first four weeks. We serve Potomac full-time and maintain capacity for holidays and peak seasons.
               </p>
             </div>
           </div>
@@ -207,13 +240,17 @@ export default function HomePage() {
           <p className="text-gray-600 leading-relaxed mb-4">
             Potomac Dog Walking is built for consistency. If your regular walker is sick or on
             vacation, a trained backup who knows your dog and your routine steps in — and we
-            notify you in advance.
+            notify you in advance. We never cancel on you without providing a qualified replacement.
           </p>
-          <p className="text-gray-600 leading-relaxed">
+          <p className="text-gray-600 leading-relaxed mb-4">
             We accept credit card payments through our secure scheduling platform, and recurring
             clients are billed automatically. Our team serves Potomac full-time, and we maintain
             enough capacity to guarantee your time slot even during holidays and peak seasons.
             If you ever have a concern, our owner Dave Peterson is personally reachable and responsive.
+          </p>
+          <p className="text-gray-600 leading-relaxed">
+            <strong>Ready to get started?</strong>{" "}
+            <a href="tel:3012653647" className="text-green-800 underline hover:text-green-600 font-semibold">Call us at (301) 265-3647</a> or fill out the form below to schedule a free meet and greet. There is no obligation — we want to make sure we are the right fit for your family before you commit.
           </p>
         </div>
       </section>

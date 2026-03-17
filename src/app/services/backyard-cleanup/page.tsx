@@ -4,9 +4,9 @@ import FAQSection from "@/components/FAQSection";
 import ContactSection from "@/components/ContactSection";
 
 export const metadata: Metadata = {
-  title: "Dog Waste Backyard Clean-up in Potomac MD | Yard Cleaning",
+  title: "Backyard Clean-up | Dog Waste Removal Potomac MD",
   description:
-    "Professional backyard clean-up and dog waste removal in Potomac, MD. Keep your yard safe and clean for your family and pets. Available as a standalone service or added to any walk.",
+    "Professional dog waste backyard clean-up in Potomac, MD. Keeps your yard safe and clean. Standalone or added to any walk. Call (301) 265-3647.",
 };
 
 const faqs = [
@@ -101,6 +101,53 @@ export default function BackyardCleanupPage() {
             with poor drainage can create persistent odor and sanitation problems. Regular
             professional clean-up protects your family&apos;s health and preserves the condition
             of your lawn.
+          </p>
+        </div>
+      </section>
+
+      {/* How It Fits Into Your Plan */}
+      <section className="py-16 sm:py-20 bg-amber-50">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
+            How Backyard Clean-up Fits Into Your Dog&apos;s Walking Plan
+          </h2>
+          <p className="text-gray-600 leading-relaxed mb-4">
+            Most Potomac clients add backyard clean-up to their dog&apos;s regular walking
+            schedule. Your walker handles the yard during the same visit, which means one
+            appointment covers both exercise and clean-up. This is especially convenient for
+            families with busy schedules who want a tidy yard without coordinating a separate
+            service provider.
+          </p>
+          <p className="text-gray-600 leading-relaxed">
+            If you prefer a standalone clean-up without a walk, we offer dedicated visits booked
+            in the same flexible 15-minute increments with a two-hour arrival window. Standalone
+            clean-ups work well for homeowners who walk their own dog but want professional help
+            keeping the yard maintained.
+          </p>
+        </div>
+      </section>
+
+      {/* What Affects Cost */}
+      <section className="py-16 sm:py-20">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
+            What Affects the Cost of Backyard Clean-up in Potomac
+          </h2>
+          <p className="text-gray-600 leading-relaxed mb-4">
+            Backyard clean-up pricing depends on yard size, the number of dogs in your household,
+            and visit frequency. Weekly service is the most common choice for homes with one or two
+            dogs. Larger properties or multi-dog households may benefit from twice-weekly visits to
+            keep the yard consistently clean.
+          </p>
+          <p className="text-gray-600 leading-relaxed">
+            When combined with a walking plan, clean-up is added to your existing visit at a
+            bundled rate. Recurring clients receive three complimentary walks as a welcome credit,
+            priority scheduling, and detailed post-visit reports. There are no contracts, and you
+            can adjust frequency at any time. Visit our{" "}
+            <a href="/services" className="text-green-800 underline font-medium">
+              services and pricing page
+            </a>{" "}
+            for a full overview of plans and options.
           </p>
         </div>
       </section>
