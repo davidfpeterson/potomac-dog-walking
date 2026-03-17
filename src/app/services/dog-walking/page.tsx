@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Hero from "@/components/Hero";
 import FAQSection from "@/components/FAQSection";
 import ContactSection from "@/components/ContactSection";
@@ -75,6 +76,13 @@ export default function DogWalkingPage() {
       {/* Intro */}
       <section className="py-16 sm:py-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <Image
+            src="/images/dog-walker-potomac-trail-summer.jpg"
+            alt="Dog walker with leashed dog on a tree-lined trail near Potomac Maryland"
+            width={800}
+            height={533}
+            className="w-full h-auto rounded-xl mb-8"
+          />
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
             What Professional Dog Walking Involves
           </h2>

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Hero from "@/components/Hero";
 import FAQSection from "@/components/FAQSection";
 import ContactSection from "@/components/ContactSection";
@@ -44,6 +45,13 @@ export default function AboutPage() {
       {/* Our Story */}
       <section className="py-16 sm:py-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <Image
+            src="/images/professional-dog-walker-potomac-md.jpg"
+            alt="Professional dog walker heading out on a solo walk in Potomac MD"
+            width={800}
+            height={533}
+            className="w-full h-auto rounded-xl mb-8"
+          />
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">Our Story</h2>
           <p className="text-gray-600 leading-relaxed mb-4">
             Potomac Dog Walking is led by Dave Peterson, who has been part of the professional pet

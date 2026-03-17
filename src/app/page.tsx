@@ -2,6 +2,7 @@ import Hero from "@/components/Hero";
 import ServiceCard from "@/components/ServiceCard";
 import FAQSection from "@/components/FAQSection";
 import ContactSection from "@/components/ContactSection";
+import Image from "next/image";
 import Link from "next/link";
 
 const services = [
@@ -98,6 +99,14 @@ export default function HomePage() {
       {/* Intro — First Paragraph Rule: service, location, who, outcome */}
       <section className="py-16 sm:py-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <Image
+            src="/images/dog-walking-potomac-trail.jpg"
+            alt="Professional dog walker with black Labrador on a nature trail in Potomac MD"
+            width={800}
+            height={533}
+            className="w-full h-auto rounded-xl mb-8"
+            priority
+          />
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
             Dog Walking and Enrichment Services in Potomac
           </h2>
