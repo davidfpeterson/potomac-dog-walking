@@ -40,7 +40,7 @@ const faqs = [
   {
     question: "How do I get started with Potomac Dog Walking?",
     answer:
-      "Schedule a free meet and greet so we can learn about your dog's needs, temperament, and routine. During the visit, we discuss service options, answer your questions, and make sure our team is the right fit for your family. There is no obligation, and we encourage you to ask us anything.",
+      "Give us a call at (301) 265-3647 so we can learn about your dog's needs, temperament, and routine. We'll discuss service options, answer your questions, and make sure our team is the right fit for your family. There is no obligation, and we encourage you to ask us anything.",
   },
   {
     question: "Are your dog walkers insured and background-checked?",
@@ -255,11 +255,10 @@ export default function HomePage() {
             We accept credit card payments through our secure scheduling platform, and recurring
             clients are billed automatically. Our team serves Potomac full-time, and we maintain
             enough capacity to guarantee your time slot even during holidays and peak seasons.
-            If you ever have a concern, our owner Dave Peterson is personally reachable and responsive.
           </p>
           <p className="text-gray-600 leading-relaxed">
             <strong>Ready to get started?</strong>{" "}
-            <a href="tel:3012653647" className="text-green-800 underline hover:text-green-600 font-semibold">Call us at (301) 265-3647</a> or fill out the form below to schedule a free meet and greet. There is no obligation — we want to make sure we are the right fit for your family before you commit.
+            <a href="tel:3012653647" className="text-green-800 underline hover:text-green-600 font-semibold">Call us at (301) 265-3647</a> to get started. There is no obligation — we want to make sure we are the right fit for your family before you commit.
           </p>
         </div>
       </section>

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     template: "%s | Potomac Dog Walking",
   },
   description:
-    "Professional dog walking and canine enrichment in Potomac, MD. Insured, bonded, GPS-tracked solo walks. Trusted since 2009. Schedule a free meet & greet.",
+    "Professional dog walking and canine enrichment in Potomac, MD. Insured, bonded, GPS-tracked solo walks. Trusted since 2009. Call (301) 265-3647.",
   openGraph: {
     title: "Professional Dog Walking in Potomac, MD | Potomac Dog Walking",
     description:

@@ -55,13 +55,6 @@ export default function Footer() {
             >
               Call (301) 265-3647
             </a>
-            <br />
-            <Link
-              href="/#contact"
-              className="inline-block bg-green-800 text-white px-5 py-2.5 rounded-lg text-sm font-semibold hover:bg-green-700 transition-colors"
-            >
-              Schedule a Free Meet &amp; Greet
-            </Link>
           </div>
         </div>
 

@@ -19,12 +19,12 @@ export default function Hero({ title, subtitle, showCTA = true }: HeroProps) {
           </p>
           {showCTA && (
             <div className="flex flex-col sm:flex-row gap-3">
-              <Link
-                href="#contact"
+              <a
+                href="tel:3012653647"
                 className="bg-amber-500 text-green-950 px-6 py-3 rounded-lg font-bold text-center hover:bg-amber-400 transition-colors"
               >
-                Schedule a Free Meet &amp; Greet
-              </Link>
+                Call Now: (301) 265-3647
+              </a>
               <Link
                 href="/services"
                 className="border-2 border-green-400 text-green-100 px-6 py-3 rounded-lg font-semibold text-center hover:bg-green-800 transition-colors"

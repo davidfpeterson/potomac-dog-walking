@@ -76,12 +76,12 @@ export default function Header() {
             <Link href="/dog-walkers" className="text-sm font-medium text-gray-700 hover:text-green-800">
               Our Team
             </Link>
-            <Link
-              href="/#contact"
+            <a
+              href="tel:3012653647"
               className="bg-green-800 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-green-700 transition-colors"
             >
-              Schedule Meet &amp; Greet
-            </Link>
+              Call (301) 265-3647
+            </a>
           </nav>
 
           {/* Mobile menu button */}
@@ -130,13 +130,13 @@ export default function Header() {
             <Link href="/dog-walkers" className="block py-2 text-gray-700 font-medium" onClick={() => setMobileOpen(false)}>
               Our Team
             </Link>
-            <Link
-              href="/#contact"
+            <a
+              href="tel:3012653647"
               className="block mt-3 bg-green-800 text-white text-center px-4 py-2.5 rounded-lg font-semibold"
               onClick={() => setMobileOpen(false)}
             >
-              Schedule Meet &amp; Greet
-            </Link>
+              Call (301) 265-3647
+            </a>
           </nav>
         )}
       </div>
