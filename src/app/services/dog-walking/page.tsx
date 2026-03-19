@@ -3,6 +3,7 @@ import Image from "next/image";
 import Hero from "@/components/Hero";
 import FAQSection from "@/components/FAQSection";
 import ContactSection from "@/components/ContactSection";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Dog Walking in Potomac MD | Solo Walks",
@@ -185,6 +186,37 @@ export default function DogWalkingPage() {
             Additional factors that may influence pricing include medication administration during the visit, special handling requirements for reactive or anxious dogs, and walks scheduled during early morning or evening hours. We publish transparent pricing on our{" "}
             <a href="/services" className="text-green-800 underline hover:text-green-600">services page</a> with no hidden fees, no surge pricing, and no long-term contracts.
           </p>
+        </div>
+      </section>
+
+      {/* Related Pages */}
+      <section className="py-16 sm:py-20 bg-warm-50">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
+            Learn More About Dog Walking in Potomac
+          </h2>
+          <ul className="space-y-2 text-gray-600">
+            <li className="flex gap-3 items-start">
+              <span className="text-green-600 text-xl leading-none">&#8226;</span>
+              <Link href="/dog-walking-prices-potomac-md" className="text-green-800 underline hover:text-green-600">Dog Walking Prices in Potomac</Link> — Transparent pricing and what affects cost
+            </li>
+            <li className="flex gap-3 items-start">
+              <span className="text-green-600 text-xl leading-none">&#8226;</span>
+              <Link href="/midday-dog-walking-potomac" className="text-green-800 underline hover:text-green-600">Midday Dog Walking for Busy Professionals</Link> — Walks between 10 AM and 2 PM
+            </li>
+            <li className="flex gap-3 items-start">
+              <span className="text-green-600 text-xl leading-none">&#8226;</span>
+              <Link href="/dog-walking-reactive-dogs-potomac" className="text-green-800 underline hover:text-green-600">Dog Walking for Reactive Dogs</Link> — Solo walks on low-trigger routes
+            </li>
+            <li className="flex gap-3 items-start">
+              <span className="text-green-600 text-xl leading-none">&#8226;</span>
+              <Link href="/same-day-dog-walking-potomac" className="text-green-800 underline hover:text-green-600">Same-Day Dog Walking</Link> — Last-minute availability
+            </li>
+            <li className="flex gap-3 items-start">
+              <span className="text-green-600 text-xl leading-none">&#8226;</span>
+              <Link href="/best-dog-walking-routes-potomac" className="text-green-800 underline hover:text-green-600">Best Dog Walking Routes in Potomac</Link> — Local trail and route guide
+            </li>
+          </ul>
         </div>
       </section>
 

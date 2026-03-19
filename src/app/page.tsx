@@ -231,6 +231,23 @@ export default function HomePage() {
             Kentsdale Estates, Lake Potomac, Park Potomac, Potomac Crest, Potomac Hills,
             Saddle Ridge, Seven Locks, and Winterset.
           </p>
+          <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mb-6">
+            <Link href="/dog-walking-north-potomac" className="text-green-800 font-semibold hover:underline text-sm">
+              North Potomac
+            </Link>
+            <Link href="/dog-walking-travilah" className="text-green-800 font-semibold hover:underline text-sm">
+              Travilah
+            </Link>
+            <Link href="/dog-walking-avenel-potomac" className="text-green-800 font-semibold hover:underline text-sm">
+              Avenel
+            </Link>
+            <Link href="/dog-walking-near-great-falls-park" className="text-green-800 font-semibold hover:underline text-sm">
+              Near Great Falls Park
+            </Link>
+            <Link href="/dog-walking-20854" className="text-green-800 font-semibold hover:underline text-sm">
+              20854 Zip Code
+            </Link>
+          </div>
           <Link
             href="/service-area"
             className="text-green-800 font-semibold hover:underline"
@@ -260,6 +277,41 @@ export default function HomePage() {
             <strong>Ready to get started?</strong>{" "}
             <a href="tel:3012653647" className="text-green-800 underline hover:text-green-600 font-semibold">Call us at (301) 265-3647</a> to get started. There is no obligation — we want to make sure we are the right fit for your family before you commit.
           </p>
+        </div>
+      </section>
+
+      {/* Helpful Resources */}
+      <section className="py-16 sm:py-20 bg-warm-50">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8 text-center">
+            Helpful Resources
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <Link href="/dog-walking-prices-potomac-md" className="block bg-white rounded-lg border border-gray-200 p-5 hover:shadow-md hover:border-green-200 transition-all">
+              <h3 className="font-bold text-gray-900 mb-1">Dog Walking Prices in Potomac</h3>
+              <p className="text-gray-600 text-sm">Transparent pricing guide with walk options and what&apos;s included.</p>
+            </Link>
+            <Link href="/best-dog-walking-routes-potomac" className="block bg-white rounded-lg border border-gray-200 p-5 hover:shadow-md hover:border-green-200 transition-all">
+              <h3 className="font-bold text-gray-900 mb-1">Best Dog Walking Routes</h3>
+              <p className="text-gray-600 text-sm">Local guide to Potomac&apos;s top trails, parks, and neighborhood loops.</p>
+            </Link>
+            <Link href="/how-to-choose-dog-walker-potomac" className="block bg-white rounded-lg border border-gray-200 p-5 hover:shadow-md hover:border-green-200 transition-all">
+              <h3 className="font-bold text-gray-900 mb-1">How to Choose a Dog Walker</h3>
+              <p className="text-gray-600 text-sm">What to look for, what to ask, and red flags to avoid.</p>
+            </Link>
+            <Link href="/midday-dog-walking-potomac" className="block bg-white rounded-lg border border-gray-200 p-5 hover:shadow-md hover:border-green-200 transition-all">
+              <h3 className="font-bold text-gray-900 mb-1">Midday Dog Walking</h3>
+              <p className="text-gray-600 text-sm">Consistent walks between 10 AM and 2 PM for busy professionals.</p>
+            </Link>
+            <Link href="/dog-walking-reactive-dogs-potomac" className="block bg-white rounded-lg border border-gray-200 p-5 hover:shadow-md hover:border-green-200 transition-all">
+              <h3 className="font-bold text-gray-900 mb-1">Walking Reactive Dogs</h3>
+              <p className="text-gray-600 text-sm">Solo walks with consistent walkers on low-trigger routes.</p>
+            </Link>
+            <Link href="/is-dog-walking-worth-it" className="block bg-white rounded-lg border border-gray-200 p-5 hover:shadow-md hover:border-green-200 transition-all">
+              <h3 className="font-bold text-gray-900 mb-1">Is Dog Walking Worth It?</h3>
+              <p className="text-gray-600 text-sm">Benefits, costs, and what to expect for busy dog owners.</p>
+            </Link>
+          </div>
         </div>
       </section>
 

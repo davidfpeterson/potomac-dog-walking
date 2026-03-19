@@ -6,12 +6,22 @@ import { useState } from "react";
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
+  const [areasOpen, setAreasOpen] = useState(false);
 
   const services = [
     { name: "Dog Walking", href: "/services/dog-walking" },
     { name: "Canine Enrichment", href: "/services/canine-enrichment" },
     { name: "Medication Administration", href: "/services/medication-administration" },
     { name: "Backyard Clean-up", href: "/services/backyard-cleanup" },
+  ];
+
+  const areas = [
+    { name: "Potomac, MD", href: "/service-area" },
+    { name: "North Potomac", href: "/dog-walking-north-potomac" },
+    { name: "Travilah", href: "/dog-walking-travilah" },
+    { name: "Avenel", href: "/dog-walking-avenel-potomac" },
+    { name: "Near Great Falls Park", href: "/dog-walking-near-great-falls-park" },
+    { name: "20854 Zip Code", href: "/dog-walking-20854" },
   ];
 
   return (
@@ -52,7 +62,7 @@ export default function Header() {
                     href="/services"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-800 font-medium"
                   >
-                    All Services
+                    All Services &amp; Pricing
                   </Link>
                   <div className="border-t my-1" />
                   {services.map((s) => (
@@ -64,14 +74,46 @@ export default function Header() {
                       {s.name}
                     </Link>
                   ))}
+                  <div className="border-t my-1" />
+                  <Link
+                    href="/dog-walking-prices-potomac-md"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-800"
+                  >
+                    Pricing Guide
+                  </Link>
+                </div>
+              )}
+            </div>
+            <div
+              className="relative"
+              onMouseEnter={() => setAreasOpen(true)}
+              onMouseLeave={() => setAreasOpen(false)}
+            >
+              <Link
+                href="/service-area"
+                className="text-sm font-medium text-gray-700 hover:text-green-800 flex items-center gap-1"
+              >
+                Areas
+                <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </Link>
+              {areasOpen && (
+                <div className="absolute top-full left-0 mt-0 w-56 bg-white rounded-lg shadow-lg border py-2">
+                  {areas.map((a) => (
+                    <Link
+                      key={a.href}
+                      href={a.href}
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-800"
+                    >
+                      {a.name}
+                    </Link>
+                  ))}
                 </div>
               )}
             </div>
             <Link href="/about" className="text-sm font-medium text-gray-700 hover:text-green-800">
               About
-            </Link>
-            <Link href="/service-area" className="text-sm font-medium text-gray-700 hover:text-green-800">
-              Service Area
             </Link>
             <Link href="/dog-walkers" className="text-sm font-medium text-gray-700 hover:text-green-800">
               Our Team
@@ -121,11 +163,24 @@ export default function Header() {
                 {s.name}
               </Link>
             ))}
-            <Link href="/about" className="block py-2 text-gray-700 font-medium" onClick={() => setMobileOpen(false)}>
-              About
+            <Link href="/dog-walking-prices-potomac-md" className="block py-2 pl-4 text-gray-600 text-sm" onClick={() => setMobileOpen(false)}>
+              Pricing Guide
             </Link>
             <Link href="/service-area" className="block py-2 text-gray-700 font-medium" onClick={() => setMobileOpen(false)}>
-              Service Area
+              Service Areas
+            </Link>
+            {areas.map((a) => (
+              <Link
+                key={a.href}
+                href={a.href}
+                className="block py-2 pl-4 text-gray-600 text-sm"
+                onClick={() => setMobileOpen(false)}
+              >
+                {a.name}
+              </Link>
+            ))}
+            <Link href="/about" className="block py-2 text-gray-700 font-medium" onClick={() => setMobileOpen(false)}>
+              About
             </Link>
             <Link href="/dog-walkers" className="block py-2 text-gray-700 font-medium" onClick={() => setMobileOpen(false)}>
               Our Team

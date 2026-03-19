@@ -3,6 +3,7 @@ import Image from "next/image";
 import Hero from "@/components/Hero";
 import FAQSection from "@/components/FAQSection";
 import ContactSection from "@/components/ContactSection";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Service Area | Dog Walking in Potomac MD",
@@ -135,6 +136,40 @@ export default function ServiceAreaPage() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Neighborhood Pages */}
+      <section className="py-16 sm:py-20 bg-warm-50">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
+            Explore Dog Walking by Area
+          </h2>
+          <p className="text-gray-600 mb-4">
+            Learn more about dog walking in specific Potomac neighborhoods and nearby areas:
+          </p>
+          <ul className="space-y-2 text-gray-600">
+            <li className="flex gap-3 items-start">
+              <span className="text-green-600 text-xl leading-none">&#8226;</span>
+              <Link href="/dog-walking-north-potomac" className="text-green-800 underline hover:text-green-600">Dog Walking in North Potomac</Link> — Fallsreach, Quince Orchard Valley, and surrounding communities
+            </li>
+            <li className="flex gap-3 items-start">
+              <span className="text-green-600 text-xl leading-none">&#8226;</span>
+              <Link href="/dog-walking-travilah" className="text-green-800 underline hover:text-green-600">Dog Walking in Travilah</Link> — Travilah Estates, Piney Meetinghouse Road, Glen Road corridor
+            </li>
+            <li className="flex gap-3 items-start">
+              <span className="text-green-600 text-xl leading-none">&#8226;</span>
+              <Link href="/dog-walking-avenel-potomac" className="text-green-800 underline hover:text-green-600">Dog Walking in Avenel, Potomac</Link> — Near TPC Potomac with tree-lined streets
+            </li>
+            <li className="flex gap-3 items-start">
+              <span className="text-green-600 text-xl leading-none">&#8226;</span>
+              <Link href="/dog-walking-near-great-falls-park" className="text-green-800 underline hover:text-green-600">Dog Walking Near Great Falls Park</Link> — C&amp;O Canal, Billy Goat Trail, Falls Road corridor
+            </li>
+            <li className="flex gap-3 items-start">
+              <span className="text-green-600 text-xl leading-none">&#8226;</span>
+              <Link href="/dog-walking-20854" className="text-green-800 underline hover:text-green-600">Dog Walking in 20854</Link> — All neighborhoods in the Potomac zip code
+            </li>
+          </ul>
         </div>
       </section>
 

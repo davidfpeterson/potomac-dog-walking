@@ -62,6 +62,9 @@ export default function RootLayout({
                 },
               },
               priceRange: "$$",
+              telephone: "(301) 265-3647",
+              email: "info@potomacdogwalking.com",
+              sameAs: [],
               openingHoursSpecification: [
                 {
                   "@type": "OpeningHoursSpecification",
@@ -78,6 +81,90 @@ export default function RootLayout({
                   closes: "19:00",
                 },
               ],
+              hasOfferCatalog: {
+                "@type": "OfferCatalog",
+                name: "Dog Walking Services",
+                itemListElement: [
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "Relief Walk",
+                      description:
+                        "15-minute solo dog walk for puppies, senior dogs, or quick midday bathroom breaks in Potomac, MD.",
+                      areaServed: {
+                        "@type": "City",
+                        name: "Potomac, MD",
+                      },
+                    },
+                  },
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "Signature Walk",
+                      description:
+                        "30-minute solo dog walk with GPS tracking and post-visit report. Most popular service in Potomac, MD.",
+                      areaServed: {
+                        "@type": "City",
+                        name: "Potomac, MD",
+                      },
+                    },
+                  },
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "Fitness Walk",
+                      description:
+                        "45-minute solo dog walk for high-energy breeds. Sustained exercise on Potomac's trails and neighborhoods.",
+                      areaServed: {
+                        "@type": "City",
+                        name: "Potomac, MD",
+                      },
+                    },
+                  },
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "Adventure Walk",
+                      description:
+                        "60-minute solo dog walk with trail access and transportation. Visits C&O Canal, Cabin John Park, and Potomac trails.",
+                      areaServed: {
+                        "@type": "City",
+                        name: "Potomac, MD",
+                      },
+                    },
+                  },
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "Canine Enrichment",
+                      description:
+                        "Mental stimulation activities including scent work and engagement exercises for dogs in Potomac, MD.",
+                      areaServed: {
+                        "@type": "City",
+                        name: "Potomac, MD",
+                      },
+                    },
+                  },
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "Medication Administration",
+                      description:
+                        "Reliable administration of prescribed medications during scheduled dog walking visits in Potomac, MD.",
+                      areaServed: {
+                        "@type": "City",
+                        name: "Potomac, MD",
+                      },
+                    },
+                  },
+                ],
+              },
             }),
           }}
         />

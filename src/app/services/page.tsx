@@ -205,6 +205,41 @@ export default function ServicesPage() {
         </div>
       </section>
 
+      {/* Related Pages */}
+      <section className="py-16 sm:py-20 bg-warm-50">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
+            More About Dog Walking in Potomac
+          </h2>
+          <ul className="space-y-2 text-gray-600">
+            <li className="flex gap-3 items-start">
+              <span className="text-green-600 text-xl leading-none">&#8226;</span>
+              <Link href="/dog-walking-prices-potomac-md" className="text-green-800 underline hover:text-green-600">Dog Walking Prices in Potomac MD</Link> — Detailed pricing breakdown
+            </li>
+            <li className="flex gap-3 items-start">
+              <span className="text-green-600 text-xl leading-none">&#8226;</span>
+              <Link href="/midday-dog-walking-potomac" className="text-green-800 underline hover:text-green-600">Midday Dog Walking for Busy Professionals</Link>
+            </li>
+            <li className="flex gap-3 items-start">
+              <span className="text-green-600 text-xl leading-none">&#8226;</span>
+              <Link href="/dog-walking-reactive-dogs-potomac" className="text-green-800 underline hover:text-green-600">Dog Walking for Reactive Dogs</Link>
+            </li>
+            <li className="flex gap-3 items-start">
+              <span className="text-green-600 text-xl leading-none">&#8226;</span>
+              <Link href="/same-day-dog-walking-potomac" className="text-green-800 underline hover:text-green-600">Same-Day Dog Walking in Potomac</Link>
+            </li>
+            <li className="flex gap-3 items-start">
+              <span className="text-green-600 text-xl leading-none">&#8226;</span>
+              <Link href="/how-to-choose-dog-walker-potomac" className="text-green-800 underline hover:text-green-600">How to Choose a Dog Walker in Potomac</Link>
+            </li>
+            <li className="flex gap-3 items-start">
+              <span className="text-green-600 text-xl leading-none">&#8226;</span>
+              <Link href="/get-started-dog-walker-potomac" className="text-green-800 underline hover:text-green-600">How to Get Started</Link>
+            </li>
+          </ul>
+        </div>
+      </section>
+
       <FAQSection faqs={faqs} />
       <ContactSection />
     </>
