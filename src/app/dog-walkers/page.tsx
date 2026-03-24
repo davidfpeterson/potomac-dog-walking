@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Hero from "@/components/Hero";
 import FAQSection from "@/components/FAQSection";
 import ContactSection from "@/components/ContactSection";
@@ -52,6 +53,14 @@ export default function DogWalkersPage() {
       {/* Intro */}
       <section className="py-16 sm:py-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <Image
+            src="/images/dog-walker-team-potomac.jpg"
+            alt="Professional dog walker team member with a dog in Potomac MD"
+            width={800}
+            height={600}
+            className="w-full h-auto rounded-xl mb-8"
+            priority
+          />
           <p className="text-gray-600 leading-relaxed">
             Professional dog walking in Potomac, Maryland, depends on the people who show up at
             your door. Whether your dog is a puppy, a senior, an athletic breed, or a laid-back
@@ -86,6 +95,13 @@ export default function DogWalkersPage() {
       {/* Consistency */}
       <section className="py-16 sm:py-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <Image
+            src="/images/potomac-dog-walking-team-member.jpg"
+            alt="Potomac Dog Walking team member on a solo walk with a dog"
+            width={800}
+            height={600}
+            className="w-full h-auto rounded-xl mb-8"
+          />
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
             Consistency and Familiarity
           </h2>
@@ -103,6 +119,13 @@ export default function DogWalkersPage() {
       {/* Communication */}
       <section className="py-16 sm:py-20 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <Image
+            src="/images/professional-dog-walking-potomac.jpg"
+            alt="Professional dog walking visit with GPS tracking in Potomac"
+            width={800}
+            height={600}
+            className="w-full h-auto rounded-xl mb-8"
+          />
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
             How Our Walkers Communicate With You
           </h2>

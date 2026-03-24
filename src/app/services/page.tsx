@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Hero from "@/components/Hero";
 import FAQSection from "@/components/FAQSection";
 import ContactSection from "@/components/ContactSection";
@@ -98,6 +99,14 @@ export default function ServicesPage() {
       {/* Intro */}
       <section className="py-16 sm:py-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <Image
+            src="/images/potomac-dog-walking-service.jpg"
+            alt="Professional dog walker with leashed dog on a Potomac neighborhood sidewalk"
+            width={800}
+            height={600}
+            className="w-full h-auto rounded-xl mb-8"
+            priority
+          />
           <p className="text-gray-600 leading-relaxed">
             Potomac Dog Walking offers flexible, personalized dog walking plans for homeowners in
             Potomac, Maryland. Every walk is a solo walk, meaning your dog receives one-on-one
@@ -141,6 +150,13 @@ export default function ServicesPage() {
       {/* Benefits of Recurring */}
       <section className="py-16 sm:py-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <Image
+            src="/images/happy-dog-potomac-md.jpg"
+            alt="Happy dog enjoying a walk through a Potomac Maryland neighborhood"
+            width={800}
+            height={600}
+            className="w-full h-auto rounded-xl mb-8"
+          />
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
             Benefits of Recurring Service
           </h2>
@@ -184,6 +200,13 @@ export default function ServicesPage() {
       {/* Additional Services */}
       <section className="py-16 sm:py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <Image
+            src="/images/dog-enrichment-potomac-md.jpg"
+            alt="Dog exploring during an enrichment walk near trails in Potomac MD"
+            width={800}
+            height={600}
+            className="w-full h-auto rounded-xl mb-8 mx-auto max-w-3xl"
+          />
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8 text-center">
             Additional Services
           </h2>

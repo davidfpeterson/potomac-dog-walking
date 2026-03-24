@@ -139,6 +139,13 @@ export default function DogWalkingPage() {
       {/* Why Daily Walks */}
       <section className="py-16 sm:py-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <Image
+            src="/images/dog-walker-cabin-john-trail.jpg"
+            alt="Dog walker with dog on a trail near Cabin John Regional Park in Potomac"
+            width={800}
+            height={600}
+            className="w-full h-auto rounded-xl mb-8"
+          />
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
             Why Dogs in Potomac Benefit from Daily Walks
           </h2>
@@ -176,6 +183,13 @@ export default function DogWalkingPage() {
       {/* What Affects Cost */}
       <section className="py-16 sm:py-20 bg-green-50">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <Image
+            src="/images/midday-dog-walk-potomac.jpg"
+            alt="Midday dog walk through a tree-lined Potomac neighborhood"
+            width={800}
+            height={600}
+            className="w-full h-auto rounded-xl mb-8"
+          />
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
             What Affects Dog Walking Costs in Potomac
           </h2>

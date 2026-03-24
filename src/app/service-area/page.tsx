@@ -102,6 +102,13 @@ export default function ServiceAreaPage() {
       {/* Parks */}
       <section className="py-16 sm:py-20 bg-green-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <Image
+            src="/images/dog-walking-service-area-potomac.jpg"
+            alt="Dog walking through a scenic Potomac neighborhood park"
+            width={800}
+            height={600}
+            className="w-full h-auto rounded-xl mb-8"
+          />
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8">
             Dog-Friendly Parks and Trails Near Potomac
           </h2>
@@ -119,6 +126,13 @@ export default function ServiceAreaPage() {
       {/* Local Resources */}
       <section className="py-16 sm:py-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <Image
+            src="/images/potomac-village-dog-walking.jpg"
+            alt="Dog walking near Potomac Village shops and restaurants"
+            width={800}
+            height={600}
+            className="w-full h-auto rounded-xl mb-8"
+          />
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
             Dog-Friendly Resources in Potomac
           </h2>

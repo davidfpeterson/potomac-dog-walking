@@ -72,6 +72,13 @@ export default function AboutPage() {
       {/* Why Potomac */}
       <section className="py-16 sm:py-20 bg-green-50">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <Image
+            src="/images/dog-walking-co-canal-potomac.jpg"
+            alt="Dog walking along the C and O Canal towpath near Potomac Maryland"
+            width={800}
+            height={600}
+            className="w-full h-auto rounded-xl mb-8"
+          />
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
             Why We Serve Potomac
           </h2>
@@ -130,6 +137,13 @@ export default function AboutPage() {
       {/* Technology */}
       <section className="py-16 sm:py-20 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <Image
+            src="/images/dog-walking-great-falls-area.jpg"
+            alt="Dog on a scenic walk near Great Falls in Potomac MD"
+            width={800}
+            height={600}
+            className="w-full h-auto rounded-xl mb-8"
+          />
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
             Technology and Communication
           </h2>

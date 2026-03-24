@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Hero from "@/components/Hero";
 import FAQSection from "@/components/FAQSection";
 import ContactSection from "@/components/ContactSection";
@@ -43,6 +44,14 @@ export default function BackyardCleanupPage() {
       {/* Intro */}
       <section className="py-16 sm:py-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <Image
+            src="/images/backyard-cleanup-potomac.jpg"
+            alt="Clean backyard in Potomac MD after professional dog waste removal service"
+            width={800}
+            height={600}
+            className="w-full h-auto rounded-xl mb-8"
+            priority
+          />
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
             What Backyard Clean-up Involves
           </h2>
@@ -86,6 +95,13 @@ export default function BackyardCleanupPage() {
       {/* Why It Matters */}
       <section className="py-16 sm:py-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <Image
+            src="/images/potomac-dog-walking-neighborhood.jpg"
+            alt="Dog in a well-maintained Potomac backyard"
+            width={800}
+            height={600}
+            className="w-full h-auto rounded-xl mb-8"
+          />
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
             Why Regular Yard Maintenance Matters
           </h2>

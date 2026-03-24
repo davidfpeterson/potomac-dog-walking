@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Hero from "@/components/Hero";
 import FAQSection from "@/components/FAQSection";
 import ContactSection from "@/components/ContactSection";
@@ -43,6 +44,14 @@ export default function MedicationAdministrationPage() {
       {/* Intro */}
       <section className="py-16 sm:py-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <Image
+            src="/images/medication-administration-dog-potomac.jpg"
+            alt="Dog receiving medication from a professional walker in Potomac MD"
+            width={800}
+            height={600}
+            className="w-full h-auto rounded-xl mb-8"
+            priority
+          />
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
             What Medication Administration Involves
           </h2>
@@ -95,6 +104,13 @@ export default function MedicationAdministrationPage() {
       {/* Why Timing Matters */}
       <section className="py-16 sm:py-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <Image
+            src="/images/trusted-dog-walkers-potomac.jpg"
+            alt="Trusted professional dog walker caring for a dog in Potomac Maryland"
+            width={800}
+            height={600}
+            className="w-full h-auto rounded-xl mb-8"
+          />
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
             Why Consistent Medication Timing Matters
           </h2>

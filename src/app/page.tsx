@@ -148,6 +148,13 @@ export default function HomePage() {
       {/* Why Your Dog Needs a Professional Walker — standalone section */}
       <section className="py-16 sm:py-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <Image
+            src="/images/dog-walking-river-road-potomac.jpg"
+            alt="Dog walking along River Road in Potomac Maryland"
+            width={800}
+            height={600}
+            className="w-full h-auto rounded-xl mb-8"
+          />
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
             Why Your Dog Needs a Professional Walker in Potomac
           </h2>
@@ -260,6 +267,13 @@ export default function HomePage() {
       {/* Reliability */}
       <section className="py-16 sm:py-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <Image
+            src="/images/solo-dog-walk-potomac.jpg"
+            alt="Solo dog walk on a quiet street in Potomac MD"
+            width={800}
+            height={600}
+            className="w-full h-auto rounded-xl mb-8"
+          />
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
             Reliability You Can Count On
           </h2>
