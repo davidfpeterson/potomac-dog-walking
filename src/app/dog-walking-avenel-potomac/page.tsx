@@ -4,10 +4,12 @@ import FAQSection from "@/components/FAQSection";
 import ContactSection from "@/components/ContactSection";
 import Link from "next/link";
 
+import Breadcrumbs from "@/components/Breadcrumbs";
 export const metadata: Metadata = {
   title: "Dog Walking in Avenel, Potomac MD | Local Dog Walkers",
   description:
     "Professional dog walking in Avenel, Potomac MD. Solo walks on Avenel's tree-lined streets near TPC Potomac. Insured, GPS-tracked. Call (301) 265-3647.",
+  alternates: { canonical: "/dog-walking-avenel-potomac" },
 };
 
 const faqs = [
@@ -36,6 +38,7 @@ const faqs = [
 export default function DogWalkingAvenelPage() {
   return (
     <>
+      <Breadcrumbs items={[{ name: "Service Area", href: "/service-area" }, { name: "Avenel", href: "/dog-walking-avenel-potomac" }]} />
       <Hero
         title="Dog Walking in Avenel, Potomac MD"
         subtitle="Professional solo walks on Avenel's tree-lined streets near TPC Potomac. Background-checked, certified walkers who know your neighborhood."

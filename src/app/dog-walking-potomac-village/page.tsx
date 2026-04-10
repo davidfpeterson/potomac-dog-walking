@@ -5,10 +5,12 @@ import ContactSection from "@/components/ContactSection";
 import Link from "next/link";
 import Image from "next/image";
 
+import Breadcrumbs from "@/components/Breadcrumbs";
 export const metadata: Metadata = {
   title: "Dog Walking in Potomac Village MD",
   description:
     "Professional dog walking in Potomac Village near River Road and Falls Road. Solo walks, GPS-tracked, insured and bonded. Call (301) 265-3647.",
+  alternates: { canonical: "/dog-walking-potomac-village" },
 };
 
 const faqs = [
@@ -37,6 +39,7 @@ const faqs = [
 export default function DogWalkingPotomacVillagePage() {
   return (
     <>
+      <Breadcrumbs items={[{ name: "Service Area", href: "/service-area" }, { name: "Potomac Village", href: "/dog-walking-potomac-village" }]} />
       <Hero
         title="Dog Walking in Potomac Village"
         subtitle="One-on-one walks for your dog through the heart of Potomac. Trusted, insured walkers who know River Road, Falls Road, and every quiet street in the village."

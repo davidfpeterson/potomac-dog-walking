@@ -4,10 +4,12 @@ import FAQSection from "@/components/FAQSection";
 import ContactSection from "@/components/ContactSection";
 import Link from "next/link";
 
+import Breadcrumbs from "@/components/Breadcrumbs";
 export const metadata: Metadata = {
   title: "How to Get Started with a Dog Walker in Potomac MD",
   description:
     "Get started with professional dog walking in Potomac, MD. Free consultation, no obligation. Call (301) 265-3647 to discuss your dog's needs.",
+  alternates: { canonical: "/get-started-dog-walker-potomac" },
 };
 
 const faqs = [
@@ -41,6 +43,7 @@ const faqs = [
 export default function GetStartedPage() {
   return (
     <>
+      <Breadcrumbs items={[{ name: "Get Started", href: "/get-started-dog-walker-potomac" }]} />
       <Hero
         title="How to Get Started with a Dog Walker in Potomac"
         subtitle="Three simple steps from your first call to your dog's first walk. Free consultation, no obligation, and a money-back guarantee during your first four weeks."

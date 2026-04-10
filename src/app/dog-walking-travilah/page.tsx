@@ -4,10 +4,12 @@ import FAQSection from "@/components/FAQSection";
 import ContactSection from "@/components/ContactSection";
 import Link from "next/link";
 
+import Breadcrumbs from "@/components/Breadcrumbs";
 export const metadata: Metadata = {
   title: "Dog Walking in Travilah MD | Local Dog Walkers",
   description:
     "Professional dog walking in Travilah, MD. Serving Travilah estates, Piney Meetinghouse Rd, and Travilah Rd communities. Insured, GPS-tracked solo walks. Call (301) 265-3647.",
+  alternates: { canonical: "/dog-walking-travilah" },
 };
 
 const neighborhoods = [
@@ -59,6 +61,7 @@ const faqs = [
 export default function DogWalkingTravilahPage() {
   return (
     <>
+      <Breadcrumbs items={[{ name: "Service Area", href: "/service-area" }, { name: "Travilah", href: "/dog-walking-travilah" }]} />
       <Hero
         title="Dog Walking in Travilah, MD"
         subtitle="Professional solo walks for dogs in Travilah estates, Piney Meetinghouse Road, and surrounding communities. Insured, background-checked walkers who know Travilah's roads and trails."

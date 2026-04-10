@@ -5,10 +5,12 @@ import ContactSection from "@/components/ContactSection";
 import Link from "next/link";
 import Image from "next/image";
 
+import Breadcrumbs from "@/components/Breadcrumbs";
 export const metadata: Metadata = {
   title: "Dog Walking on Glen Road, Potomac MD",
   description:
     "Dog walking along the Glen Road corridor in Potomac MD. Solo walks on estate-lined streets with trail access. Insured walkers. Call (301) 265-3647.",
+  alternates: { canonical: "/dog-walking-glen-road" },
 };
 
 const faqs = [
@@ -37,6 +39,7 @@ const faqs = [
 export default function DogWalkingGlenRoadPage() {
   return (
     <>
+      <Breadcrumbs items={[{ name: "Service Area", href: "/service-area" }, { name: "Glen Road", href: "/dog-walking-glen-road" }]} />
       <Hero
         title="Dog Walking on Glen Road"
         subtitle="Solo walks along Potomac's most scenic corridor. From estate properties to woodland trails, our insured walkers provide attentive care for your dog."

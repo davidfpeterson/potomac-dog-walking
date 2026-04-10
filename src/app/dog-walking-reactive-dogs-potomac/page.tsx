@@ -4,10 +4,12 @@ import FAQSection from "@/components/FAQSection";
 import ContactSection from "@/components/ContactSection";
 import Link from "next/link";
 
+import Breadcrumbs from "@/components/Breadcrumbs";
 export const metadata: Metadata = {
   title: "Dog Walking for Reactive Dogs in Potomac MD",
   description:
     "Professional dog walking for reactive, anxious, and fearful dogs in Potomac, MD. Solo walks only, low-trigger routes, consistent walkers. Call (301) 265-3647.",
+  alternates: { canonical: "/dog-walking-reactive-dogs-potomac" },
 };
 
 const faqs = [
@@ -41,6 +43,7 @@ const faqs = [
 export default function DogWalkingReactiveDogsPage() {
   return (
     <>
+      <Breadcrumbs items={[{ name: "Reactive Dogs", href: "/dog-walking-reactive-dogs-potomac" }]} />
       <Hero
         title="Dog Walking for Reactive Dogs in Potomac, MD"
         subtitle="Solo walks with consistent, trained walkers on low-trigger routes. We help reactive, anxious, and fearful dogs get the exercise they need safely."

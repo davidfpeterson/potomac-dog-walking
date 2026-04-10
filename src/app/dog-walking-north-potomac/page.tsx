@@ -4,10 +4,12 @@ import FAQSection from "@/components/FAQSection";
 import ContactSection from "@/components/ContactSection";
 import Link from "next/link";
 
+import Breadcrumbs from "@/components/Breadcrumbs";
 export const metadata: Metadata = {
   title: "Dog Walking in North Potomac MD | Local Dog Walkers",
   description:
     "Professional dog walking in North Potomac, MD. Serving Fallsreach, Kentlands-adjacent, Travilah Rd corridors, and Darnestown Rd communities. Call (301) 265-3647.",
+  alternates: { canonical: "/dog-walking-north-potomac" },
 };
 
 const neighborhoods = [
@@ -64,6 +66,7 @@ const faqs = [
 export default function DogWalkingNorthPotomacPage() {
   return (
     <>
+      <Breadcrumbs items={[{ name: "Service Area", href: "/service-area" }, { name: "North Potomac", href: "/dog-walking-north-potomac" }]} />
       <Hero
         title="Dog Walking in North Potomac, MD"
         subtitle="Professional solo walks for dogs in Fallsreach, Quince Orchard Valley, and North Potomac neighborhoods. Background-checked, insured walkers who know your streets."

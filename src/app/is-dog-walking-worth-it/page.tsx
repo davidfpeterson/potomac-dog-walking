@@ -4,10 +4,12 @@ import FAQSection from "@/components/FAQSection";
 import ContactSection from "@/components/ContactSection";
 import Link from "next/link";
 
+import Breadcrumbs from "@/components/Breadcrumbs";
 export const metadata: Metadata = {
   title: "Is Dog Walking Worth It for Busy Owners? | Potomac MD",
   description:
     "Is hiring a professional dog walker worth it? Benefits, costs, and what to expect for busy dog owners in Potomac, MD. Honest guide from Potomac Dog Walking.",
+  alternates: { canonical: "/is-dog-walking-worth-it" },
 };
 
 const faqs = [
@@ -41,6 +43,7 @@ const faqs = [
 export default function IsDogWalkingWorthItPage() {
   return (
     <>
+      <Breadcrumbs items={[{ name: "Is Dog Walking Worth It?", href: "/is-dog-walking-worth-it" }]} />
       <Hero
         title="Is Dog Walking Worth It for Busy Owners?"
         subtitle="An honest look at the benefits, costs, and real-world impact of hiring a professional dog walker — for dog owners in Potomac, MD who are weighing the decision."

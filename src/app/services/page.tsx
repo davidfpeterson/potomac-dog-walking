@@ -5,10 +5,12 @@ import FAQSection from "@/components/FAQSection";
 import ContactSection from "@/components/ContactSection";
 import Link from "next/link";
 
+import Breadcrumbs from "@/components/Breadcrumbs";
 export const metadata: Metadata = {
   title: "Dog Walking Plans & Pricing | Potomac MD",
   description:
     "Dog walking plans in Potomac, MD. Relief, Signature, Fitness, and Adventure walks. Solo walks with GPS tracking. No contracts.",
+  alternates: { canonical: "/services" },
 };
 
 const plans = [
@@ -91,6 +93,7 @@ const faqs = [
 export default function ServicesPage() {
   return (
     <>
+      <Breadcrumbs items={[{ name: "Services", href: "/services" }]} />
       <Hero
         title="Dog Walking Plans for Potomac's Most Discerning Dog Owners"
         subtitle="Flexible, personalized walking plans with solo walks, GPS tracking, and detailed post-visit reports. Every walk tailored to your dog's breed, age, and energy level."

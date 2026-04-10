@@ -5,19 +5,49 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.potomacdogwalking.com"),
   title: {
     default: "Dog Walking in Potomac MD | Potomac Dog Walking",
     template: "%s | Potomac Dog Walking",
   },
   description:
     "Professional dog walking and canine enrichment in Potomac, MD. Insured, bonded, GPS-tracked solo walks. Trusted since 2009. Call (301) 265-3647.",
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "Professional Dog Walking in Potomac, MD | Potomac Dog Walking",
     description:
       "Professional dog walking and canine enrichment services in Potomac, MD. Locally owned, insured, and trusted since 2009.",
     type: "website",
     url: "https://www.potomacdogwalking.com/",
+    siteName: "Potomac Dog Walking",
     locale: "en_US",
+    images: [
+      {
+        url: "/images/professional-dog-walker-potomac-md.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Professional dog walker with a dog in Potomac, MD",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Professional Dog Walking in Potomac, MD",
+    description:
+      "Insured, GPS-tracked solo dog walks in Potomac, MD. Trusted since 2009.",
+    images: ["/images/professional-dog-walker-potomac-md.jpg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
 };
 

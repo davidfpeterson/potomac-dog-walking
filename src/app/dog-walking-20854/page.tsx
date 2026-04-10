@@ -4,10 +4,12 @@ import FAQSection from "@/components/FAQSection";
 import ContactSection from "@/components/ContactSection";
 import Link from "next/link";
 
+import Breadcrumbs from "@/components/Breadcrumbs";
 export const metadata: Metadata = {
   title: "Dog Walking 20854 | Potomac MD Dog Walkers",
   description:
     "Professional dog walking in the 20854 zip code — Potomac, MD. Serving all neighborhoods in 20854 including Avenel, River Falls, Cabin John, and Park Potomac. Call (301) 265-3647.",
+  alternates: { canonical: "/dog-walking-20854" },
 };
 
 const neighborhoods = [
@@ -58,6 +60,7 @@ const faqs = [
 export default function DogWalking20854Page() {
   return (
     <>
+      <Breadcrumbs items={[{ name: "Service Area", href: "/service-area" }, { name: "20854", href: "/dog-walking-20854" }]} />
       <Hero
         title="Dog Walking in 20854 — Potomac, MD"
         subtitle="Professional solo walks for every neighborhood in the 20854 zip code. Insured, background-checked walkers with GPS tracking and post-visit reports."

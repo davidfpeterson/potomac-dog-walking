@@ -4,10 +4,12 @@ import FAQSection from "@/components/FAQSection";
 import ContactSection from "@/components/ContactSection";
 import Link from "next/link";
 
+import Breadcrumbs from "@/components/Breadcrumbs";
 export const metadata: Metadata = {
   title: "Dog Walking Prices in Potomac MD | Cost Guide",
   description:
     "How much does dog walking cost in Potomac, MD? Pricing for solo walks from 15–60 min. No hidden fees, no contracts. Call (301) 265-3647 for rates.",
+  alternates: { canonical: "/dog-walking-prices-potomac-md" },
 };
 
 const faqs = [
@@ -46,6 +48,7 @@ const faqs = [
 export default function DogWalkingPricesPage() {
   return (
     <>
+      <Breadcrumbs items={[{ name: "Pricing", href: "/dog-walking-prices-potomac-md" }]} />
       <Hero
         title="Dog Walking Prices in Potomac, MD"
         subtitle="Transparent pricing for professional solo walks. No hidden fees, no contracts, no surge pricing. Flexible plans that fit your schedule and budget."

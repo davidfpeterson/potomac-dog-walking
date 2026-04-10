@@ -4,10 +4,12 @@ import FAQSection from "@/components/FAQSection";
 import ContactSection from "@/components/ContactSection";
 import Link from "next/link";
 
+import Breadcrumbs from "@/components/Breadcrumbs";
 export const metadata: Metadata = {
   title: "Dog Walking Near Great Falls Park | Potomac MD",
   description:
     "Professional dog walking near Great Falls Park in Potomac, MD. Trail walks along the C&O Canal, Falls Road, and Great Falls Estates. Call (301) 265-3647.",
+  alternates: { canonical: "/dog-walking-near-great-falls-park" },
 };
 
 const trails = [
@@ -59,6 +61,7 @@ const faqs = [
 export default function DogWalkingGreatFallsParkPage() {
   return (
     <>
+      <Breadcrumbs items={[{ name: "Service Area", href: "/service-area" }, { name: "Near Great Falls Park", href: "/dog-walking-near-great-falls-park" }]} />
       <Hero
         title="Dog Walking Near Great Falls Park — Potomac, MD"
         subtitle="Professional dog walks along the C&O Canal towpath, Billy Goat Trail, and the neighborhoods surrounding Great Falls Park. Solo walks with GPS tracking."

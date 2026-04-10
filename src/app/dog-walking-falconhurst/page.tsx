@@ -5,10 +5,12 @@ import ContactSection from "@/components/ContactSection";
 import Link from "next/link";
 import Image from "next/image";
 
+import Breadcrumbs from "@/components/Breadcrumbs";
 export const metadata: Metadata = {
   title: "Dog Walking in Falconhurst, Potomac MD",
   description:
     "Dog walking services in Falconhurst, Potomac MD. Solo walks on quiet residential streets, GPS-tracked, fully insured. Call (301) 265-3647 today.",
+  alternates: { canonical: "/dog-walking-falconhurst" },
 };
 
 const faqs = [
@@ -37,6 +39,7 @@ const faqs = [
 export default function DogWalkingFalconhurstPage() {
   return (
     <>
+      <Breadcrumbs items={[{ name: "Service Area", href: "/service-area" }, { name: "Falconhurst", href: "/dog-walking-falconhurst" }]} />
       <Hero
         title="Dog Walking in Falconhurst"
         subtitle="Personalized solo walks in one of Potomac's most peaceful neighborhoods. Insured, certified walkers who treat your dog like their own."

@@ -4,10 +4,12 @@ import FAQSection from "@/components/FAQSection";
 import ContactSection from "@/components/ContactSection";
 import Link from "next/link";
 
+import Breadcrumbs from "@/components/Breadcrumbs";
 export const metadata: Metadata = {
   title: "Midday Dog Walking for Busy Professionals | Potomac MD",
   description:
     "Midday dog walking in Potomac, MD for working professionals. Consistent 10 AM–2 PM walks while you're at work. GPS-tracked, insured. Call (301) 265-3647.",
+  alternates: { canonical: "/midday-dog-walking-potomac" },
 };
 
 const faqs = [
@@ -41,6 +43,7 @@ const faqs = [
 export default function MiddayDogWalkingPage() {
   return (
     <>
+      <Breadcrumbs items={[{ name: "Midday Dog Walking", href: "/midday-dog-walking-potomac" }]} />
       <Hero
         title="Midday Dog Walking for Busy Professionals — Potomac, MD"
         subtitle="Consistent midday walks between 10 AM and 2 PM while you're at work. Your dog gets exercise, bathroom breaks, and human interaction at the point in the day when they need it most."

@@ -4,10 +4,12 @@ import FAQSection from "@/components/FAQSection";
 import ContactSection from "@/components/ContactSection";
 import Link from "next/link";
 
+import Breadcrumbs from "@/components/Breadcrumbs";
 export const metadata: Metadata = {
   title: "How to Choose a Dog Walker in Potomac MD | Guide",
   description:
     "What to look for when hiring a dog walker in Potomac, MD. Insurance, background checks, solo vs. group walks, GPS tracking, and red flags to avoid.",
+  alternates: { canonical: "/how-to-choose-dog-walker-potomac" },
 };
 
 const faqs = [
@@ -41,6 +43,7 @@ const faqs = [
 export default function HowToChooseDogWalkerPage() {
   return (
     <>
+      <Breadcrumbs items={[{ name: "How to Choose a Walker", href: "/how-to-choose-dog-walker-potomac" }]} />
       <Hero
         title="How to Choose a Dog Walker in Potomac, MD"
         subtitle="What to look for, what to ask, and what red flags to avoid when hiring a professional dog walker for your home in Potomac."

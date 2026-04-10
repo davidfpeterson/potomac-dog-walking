@@ -4,10 +4,12 @@ import FAQSection from "@/components/FAQSection";
 import ContactSection from "@/components/ContactSection";
 import Link from "next/link";
 
+import Breadcrumbs from "@/components/Breadcrumbs";
 export const metadata: Metadata = {
   title: "Best Dog Walking Routes in Potomac MD | Local Guide",
   description:
     "Local guide to the best dog walking routes in Potomac, MD. C&O Canal towpath, Cabin John trails, neighborhood loops, and more. By Potomac Dog Walking.",
+  alternates: { canonical: "/best-dog-walking-routes-potomac" },
 };
 
 const routes = [
@@ -111,6 +113,7 @@ const faqs = [
 export default function BestDogWalkingRoutesPage() {
   return (
     <>
+      <Breadcrumbs items={[{ name: "Best Walking Routes", href: "/best-dog-walking-routes-potomac" }]} />
       <Hero
         title="Best Dog Walking Routes in Potomac, MD"
         subtitle="A local guide to Potomac's top trails, parks, and neighborhood walking routes — from the C&O Canal towpath to quiet cul-de-sac loops. Written by walkers who use them every day."

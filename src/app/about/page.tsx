@@ -4,10 +4,12 @@ import Hero from "@/components/Hero";
 import FAQSection from "@/components/FAQSection";
 import ContactSection from "@/components/ContactSection";
 
+import Breadcrumbs from "@/components/Breadcrumbs";
 export const metadata: Metadata = {
   title: "About Potomac Dog Walking | Potomac MD",
   description:
     "Locally owned dog walking company in Potomac, MD. Insured, bonded, vet-recommended since 2009. Led by Dave Peterson. Schedule a free meet and greet.",
+  alternates: { canonical: "/about" },
 };
 
 const faqs = [
@@ -36,6 +38,7 @@ const faqs = [
 export default function AboutPage() {
   return (
     <>
+      <Breadcrumbs items={[{ name: "About", href: "/about" }]} />
       <Hero
         title="About Potomac Dog Walking"
         subtitle="Locally owned and operated since 2009. Over twenty thousand visits per year across Potomac's neighborhoods. Insured, bonded, and vet-recommended."

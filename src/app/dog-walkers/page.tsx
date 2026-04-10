@@ -4,10 +4,12 @@ import Hero from "@/components/Hero";
 import FAQSection from "@/components/FAQSection";
 import ContactSection from "@/components/ContactSection";
 
+import Breadcrumbs from "@/components/Breadcrumbs";
 export const metadata: Metadata = {
   title: "Meet Our Dog Walkers | Potomac MD",
   description:
     "Professional dog walkers in Potomac, MD. Background-checked, Pet First Aid-certified, trained in canine behavior. Meet our team today.",
+  alternates: { canonical: "/dog-walkers" },
 };
 
 const faqs = [
@@ -44,6 +46,7 @@ const qualities = [
 export default function DogWalkersPage() {
   return (
     <>
+      <Breadcrumbs items={[{ name: "Our Walkers", href: "/dog-walkers" }]} />
       <Hero
         title="Meet Our Dog Walkers"
         subtitle="Trained, trustworthy, and reliable professionals who are background-checked, certified in Pet First Aid and CPR, and experienced with dogs of every breed, age, and temperament."

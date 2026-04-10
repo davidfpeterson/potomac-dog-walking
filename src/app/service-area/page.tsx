@@ -5,10 +5,12 @@ import FAQSection from "@/components/FAQSection";
 import ContactSection from "@/components/ContactSection";
 import Link from "next/link";
 
+import Breadcrumbs from "@/components/Breadcrumbs";
 export const metadata: Metadata = {
   title: "Service Area | Dog Walking in Potomac MD",
   description:
     "Dog walking service area in Potomac, MD. Serving Avenel, River Falls, Cabin John, Park Potomac, Bradley Farms, and surrounding neighborhoods.",
+  alternates: { canonical: "/service-area" },
 };
 
 const neighborhoods = [
@@ -70,6 +72,7 @@ const faqs = [
 export default function ServiceAreaPage() {
   return (
     <>
+      <Breadcrumbs items={[{ name: "Service Area", href: "/service-area" }]} />
       <Hero
         title="Service Area — Dog Walking in Potomac, MD"
         subtitle="Professional dog walking and pet care throughout Potomac's established neighborhoods. We know the area's best walking routes, trails, and green spaces."

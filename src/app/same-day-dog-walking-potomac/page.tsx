@@ -4,10 +4,12 @@ import FAQSection from "@/components/FAQSection";
 import ContactSection from "@/components/ContactSection";
 import Link from "next/link";
 
+import Breadcrumbs from "@/components/Breadcrumbs";
 export const metadata: Metadata = {
   title: "Same-Day Dog Walking in Potomac MD | Last-Minute Walks",
   description:
     "Same-day and last-minute dog walking in Potomac, MD. Call by 10 AM for same-day availability. Insured, GPS-tracked solo walks. Call (301) 265-3647.",
+  alternates: { canonical: "/same-day-dog-walking-potomac" },
 };
 
 const faqs = [
@@ -41,6 +43,7 @@ const faqs = [
 export default function SameDayDogWalkingPage() {
   return (
     <>
+      <Breadcrumbs items={[{ name: "Same-Day Dog Walking", href: "/same-day-dog-walking-potomac" }]} />
       <Hero
         title="Same-Day Dog Walking in Potomac, MD"
         subtitle="Need a dog walker today? Call by 10 AM for same-day availability. Professional solo walks with the same quality, GPS tracking, and post-visit reports as our scheduled service."

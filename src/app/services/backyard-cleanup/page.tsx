@@ -4,10 +4,12 @@ import Hero from "@/components/Hero";
 import FAQSection from "@/components/FAQSection";
 import ContactSection from "@/components/ContactSection";
 
+import Breadcrumbs from "@/components/Breadcrumbs";
 export const metadata: Metadata = {
   title: "Backyard Clean-up | Dog Waste Removal Potomac MD",
   description:
     "Professional dog waste backyard clean-up in Potomac, MD. Keeps your yard safe and clean. Standalone or added to any walk. Call (301) 265-3647.",
+  alternates: { canonical: "/services/backyard-cleanup" },
 };
 
 const faqs = [
@@ -36,6 +38,7 @@ const faqs = [
 export default function BackyardCleanupPage() {
   return (
     <>
+      <Breadcrumbs items={[{ name: "Services", href: "/services" }, { name: "Backyard Clean-up", href: "/services/backyard-cleanup" }]} />
       <Hero
         title="Backyard Clean-up in Potomac, MD"
         subtitle="Professional dog waste removal to keep your yard safe, clean, and enjoyable for your family and pets. Available as a standalone service or added to any walk."

@@ -4,10 +4,12 @@ import Hero from "@/components/Hero";
 import FAQSection from "@/components/FAQSection";
 import ContactSection from "@/components/ContactSection";
 
+import Breadcrumbs from "@/components/Breadcrumbs";
 export const metadata: Metadata = {
   title: "Canine Enrichment in Potomac MD | Scent Work",
   description:
     "Canine enrichment in Potomac, MD. Scent work, exploration, and mental stimulation tailored to your dog. Call (301) 265-3647.",
+  alternates: { canonical: "/services/canine-enrichment" },
 };
 
 const faqs = [
@@ -36,6 +38,7 @@ const faqs = [
 export default function CanineEnrichmentPage() {
   return (
     <>
+      <Breadcrumbs items={[{ name: "Services", href: "/services" }, { name: "Canine Enrichment", href: "/services/canine-enrichment" }]} />
       <Hero
         title="Canine Enrichment in Potomac, MD"
         subtitle="Structured mental stimulation and sensory engagement that goes beyond a standard walk. Scent work, exploration, and problem-solving exercises tailored to your dog."

@@ -5,10 +5,12 @@ import FAQSection from "@/components/FAQSection";
 import ContactSection from "@/components/ContactSection";
 import Link from "next/link";
 
+import Breadcrumbs from "@/components/Breadcrumbs";
 export const metadata: Metadata = {
   title: "Dog Walking in Potomac MD | Solo Walks",
   description:
     "Solo dog walks from 15 to 60 minutes in Potomac, MD. GPS-tracked, certified walkers, post-visit reports. Call (301) 265-3647.",
+  alternates: { canonical: "/services/dog-walking" },
 };
 
 const walkOptions = [
@@ -69,6 +71,7 @@ const faqs = [
 export default function DogWalkingPage() {
   return (
     <>
+      <Breadcrumbs items={[{ name: "Services", href: "/services" }, { name: "Dog Walking", href: "/services/dog-walking" }]} />
       <Hero
         title="Dog Walking in Potomac, MD"
         subtitle="Professional solo walks from 15 to 60 minutes, delivered by background-checked, Pet First Aid-certified walkers who tailor each outing to your dog's breed, age, and energy level."

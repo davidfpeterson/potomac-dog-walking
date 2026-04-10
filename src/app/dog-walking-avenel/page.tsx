@@ -5,10 +5,12 @@ import ContactSection from "@/components/ContactSection";
 import Link from "next/link";
 import Image from "next/image";
 
+import Breadcrumbs from "@/components/Breadcrumbs";
 export const metadata: Metadata = {
   title: "Dog Walking in Avenel, Potomac MD",
   description:
     "Professional dog walking in the Avenel community of Potomac, MD. Solo walks near TPC golf course, insured and GPS-tracked. Call (301) 265-3647.",
+  alternates: { canonical: "/dog-walking-avenel" },
 };
 
 const faqs = [
@@ -37,6 +39,7 @@ const faqs = [
 export default function DogWalkingAvenelPage() {
   return (
     <>
+      <Breadcrumbs items={[{ name: "Service Area", href: "/service-area" }, { name: "Avenel", href: "/dog-walking-avenel" }]} />
       <Hero
         title="Dog Walking in Avenel"
         subtitle="Dedicated, one-on-one dog walks in the Avenel community. Background-checked walkers who know the neighborhood's paths, golf course perimeter, and nearby trails."

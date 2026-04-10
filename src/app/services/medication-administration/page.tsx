@@ -4,10 +4,12 @@ import Hero from "@/components/Hero";
 import FAQSection from "@/components/FAQSection";
 import ContactSection from "@/components/ContactSection";
 
+import Breadcrumbs from "@/components/Breadcrumbs";
 export const metadata: Metadata = {
   title: "Dog Medication Administration | Potomac MD",
   description:
     "Dog medication administration in Potomac, MD. Trained walkers give prescribed meds on schedule during visits. Never miss a dose. Call (301) 265-3647.",
+  alternates: { canonical: "/services/medication-administration" },
 };
 
 const faqs = [
@@ -36,6 +38,7 @@ const faqs = [
 export default function MedicationAdministrationPage() {
   return (
     <>
+      <Breadcrumbs items={[{ name: "Services", href: "/services" }, { name: "Medication Administration", href: "/services/medication-administration" }]} />
       <Hero
         title="Medication Administration for Dogs in Potomac, MD"
         subtitle="Reliable administration of prescribed medications during scheduled visits. Pet First Aid-certified walkers ensure your dog never misses a dose."
