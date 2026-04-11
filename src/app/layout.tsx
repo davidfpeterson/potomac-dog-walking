@@ -3,6 +3,7 @@ import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import StickyMobileCTA from "@/components/StickyMobileCTA";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.potomacdogwalking.com"),
@@ -200,10 +201,11 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="flex flex-col min-h-screen">
+      <body className="flex flex-col min-h-screen pb-[64px] lg:pb-0">
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
+        <StickyMobileCTA />
         <Analytics />
       </body>
     </html>

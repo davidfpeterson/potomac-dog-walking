@@ -2,6 +2,8 @@ import Hero from "@/components/Hero";
 import ServiceCard from "@/components/ServiceCard";
 import FAQSection from "@/components/FAQSection";
 import ContactSection from "@/components/ContactSection";
+import HowItWorks from "@/components/HowItWorks";
+import NoRiskPromise from "@/components/NoRiskPromise";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -68,8 +70,9 @@ export default function HomePage() {
   return (
     <>
       <Hero
-        title="Professional Dog Walking in Potomac, MD"
+        title="Your dog deserves the walk they're not getting."
         subtitle="Personalized solo walks, canine enrichment, and pet care from background-checked, certified professionals. Trusted by Potomac's most discerning dog owners since 2009."
+        primaryCTA
       />
 
       {/* Trust Bar */}
@@ -95,6 +98,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* How It Works — kills first-contact uncertainty */}
+      <HowItWorks />
 
       {/* Intro — First Paragraph Rule: service, location, who, outcome */}
       <section className="py-16 sm:py-20">
@@ -330,6 +336,7 @@ export default function HomePage() {
       </section>
 
       <FAQSection faqs={faqs} />
+      <NoRiskPromise />
       <ContactSection />
     </>
   );
